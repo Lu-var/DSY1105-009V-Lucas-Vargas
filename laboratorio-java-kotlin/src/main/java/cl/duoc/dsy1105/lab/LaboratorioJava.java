@@ -6,7 +6,7 @@ public class LaboratorioJava {
         String modelo = "Galaxy A55";
         int porcentaje = 18;
         boolean modoBateria = false;
-        String nombreProp = "";
+        String nombreProp = null;
 
         System.out.println("=== TELÉFONO ===");
         System.out.println("Modelo: " + modelo);
@@ -14,7 +14,7 @@ public class LaboratorioJava {
         System.out.println("Estado: " + obtenerEstadoBateria(porcentaje));
         System.out.println("Ahorro de energia: " + modoBateria);
 
-        if(nombreProp.isEmpty()){
+        if(nombreProp == null){
             nombreProp = "Sin propietario";
         }
 
